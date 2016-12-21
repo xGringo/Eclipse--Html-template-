@@ -1,0 +1,54 @@
+* {
+	outline: 1px solid black;
+}
+
+/* ==============  HEADER =================*/
+
+body {
+    max-width: 1600px;
+    font-family: "GothamProBold";
+}
+
+.header {
+    background: url(../images/slide_1.jpg) #702eb2 no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: auto;
+    color: #ffffff;
+}
+
+.header_bottom input[type=text],
+.header_bottom input[type=email] {
+    color: #535353;
+}
+
+.main_nav {
+    list-style: none;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.main_nav .active,
+.main_nav a:hover {
+    border-bottom: 2px solid #28c8c6;
+}
+
+.main_nav li {
+    display: inline-block;
+}
+
+.main_nav a {
+    display: inline-block;
+    margin-left: 36px;
+    padding-bottom: 27px;
+    text-decoration: none;
+}
+
+.logo {
+    padding-top: 75px;
+}
+
+.navigation {
+    padding-top: 95px;
+}
