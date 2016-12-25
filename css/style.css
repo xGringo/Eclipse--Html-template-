@@ -30,19 +30,63 @@ body {
 }
 
 .main_nav .active,
-.main_nav a:hover {
+.uppercase:hover {
     border-bottom: 2px solid #28c8c6;
+}
+
+.main_nav .active,
+.uppercase {
+    text-transform: uppercase;
+}
+
+.uppercase:hover {
+    color: #ffa;
 }
 
 .main_nav li {
     display: inline-block;
+    margin-bottom: 0;
 }
 
 .main_nav a {
     display: inline-block;
     margin-left: 36px;
     padding-bottom: 27px;
+    padding-top: 27px;
     text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.join {
+    position: relative;
+    padding-left: 37px;
+    padding-right: 58px;
+    background-color: #a100ff;
+    border-radius: 10px;
+}
+
+.join::after {
+    content:'';
+    top: 32px;
+    right: 20px;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: url(../images/nav_button.png) no-repeat;
+    background-color: transparent;
+}
+
+.join:hover::after,
+.join:hover{
+    background-color: #7904be;
+    color: #ffa;
+}
+
+.join:active::after,
+.join:active {
+    background-color: #570388;
+    color: #ffd;
 }
 
 .logo {
@@ -50,5 +94,74 @@ body {
 }
 
 .navigation {
-    padding-top: 95px;
+    padding-top: 68px;
+}
+
+.header_main h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 90%;
+}
+
+.header_bottom {
+    padding-top: 190px;
+}
+
+.header_bottom p {
+    font-family: "GothamProMedium";
+}
+
+.header_bottom input[type=text],
+.header_bottom input[type=email] {
+    width: 280px;
+    height: 60px;
+    padding-left: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    color: #525252;
+}
+
+.text_inp,
+.email_inp {
+    position: relative;
+    width: 280px;
+    height: 60px;
+    display: inline-block;
+    margin-right: 17px;
+}
+
+.text_inp::after,
+.email_inp::after {
+    position: absolute;
+    content: '';
+    right: 22px;
+    bottom: 27%;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+}
+
+.text_inp::after {
+    background: url(../images/form_arrow_down.png) no-repeat;
+}
+
+.email_inp::after {
+    background: url(../images/form_arrow.png) no-repeat;
+}
+
+.sub_btn {
+    width: 65px;
+    height: 60px;
+    background-color: #28c6c4;
+    color: #28c6c4;
+}
+
+.submit_btn {
+    display: inline-block;
+    width: 65px;
+    height: 60px;
+    position: relative;
 }
