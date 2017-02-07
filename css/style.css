@@ -127,10 +127,7 @@ body {
 .text_inp,
 .email_inp {
     position: relative;
-    width: 280px;
-    height: 60px;
     display: inline-block;
-    margin-right: 17px;
 }
 
 .text_inp::after,
@@ -138,7 +135,7 @@ body {
     position: absolute;
     content: '';
     right: 22px;
-    bottom: 27%;
+    bottom: 40%;
     width: 24px;
     height: 24px;
     background-color: transparent;
@@ -153,15 +150,22 @@ body {
 }
 
 .sub_btn {
+    position: relative;
     width: 65px;
     height: 60px;
     background-color: #28c6c4;
     color: #28c6c4;
 }
 
+.img {
+    position: absolute;
+    display: block;
+    bottom: 35%;
+    right: 35%;
+}
+
 .submit_btn {
     display: inline-block;
     width: 65px;
     height: 60px;
-    position: relative;
 }
